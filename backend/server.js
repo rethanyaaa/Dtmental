@@ -29,12 +29,6 @@ app.use(cors());
 app.use("/uploads", express.static("uploads"));
 
 // ------ api endpoints ------
-app.use("/api/admin", adminRouter);
-app.use("/api/doctor", doctorRouter);
-app.use("/api/user", userRouter);
-app.use("/api/assessments", assessmentRouter);
-app.use("/api/testimonials", testimonialRouter);
-app.use("/api/blog-posts", blogPostRouter);
 app.use("/api/upload", uploadRouter);
 app.use("/api/mood-tracking", moodTrackingRouter);
 app.use("/api/notifications", notificationRouter);
